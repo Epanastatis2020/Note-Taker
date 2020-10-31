@@ -15,12 +15,14 @@ const fs = require("fs");
         let newID = () => {
             let IDvar = Math.floor(Math.random() * 10000 + 1).toString();
             // check to see if the ID already exists
-            if (existingIDArray.includes(IDvar) {
+            if (existingIDArray.includes(IDvar)) {
                 newID()
-            });
+            };
             return IDvar;
         };
     };
+
+    // Write to the database
 
     const writetoDB = () => {
         fs.writeFileSync(__dirname + "/../db/db.json", JSON.stringify(notesArray), "UTF8");
