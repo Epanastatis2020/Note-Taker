@@ -2,8 +2,8 @@
 // Setting dependencies
 //------------------------------------------------
 
-const path = require("path");
 const express = require("express");
+const path = require("path");
 
 //------------------------------------------------
 // Setting express app
@@ -19,8 +19,19 @@ let PORT = process.env.PORT || 4000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 
 //------------------------------------------------
-// Setting routes
+// Setting up server to use route files
 //------------------------------------------------
+
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
+
+//------------------------------------------------
+// Starting the server and listening
+//------------------------------------------------
+
+app.listen(PORT, function () {
+    console.log("App listening on PORT " + PORT);
+})
