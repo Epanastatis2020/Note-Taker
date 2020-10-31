@@ -7,8 +7,20 @@ const fs = require("fs");
     // Generate a unique ID
 
     const generateID = () => {
-        let newID = Math.floor(Math.random() * 10000 + 1).toString();
-        return newID;
+        // create array of IDs already in use
+        const existingIDArray = [];
+        notesArray.forEach((note) => existingIDArray.push(note.id));
+
+        // generate new ID
+        let newID = () => {
+            let IDvar = Math.floor(Math.random() * 10000 + 1).toString();
+            // check to see if the ID already exists
+            if (existingIDArray.includes(IDvar) {
+                newID()
+            }) else {
+                return IDvar;
+            };
+        };
     };
 
     const writetoDB = () => {
@@ -19,6 +31,7 @@ const fs = require("fs");
 // Setting routes
 //------------------------------------------------
 
+// global variable
 let notesArray = [];
 
 module.exports = function (app) {
