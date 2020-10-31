@@ -17,9 +17,8 @@ const fs = require("fs");
             // check to see if the ID already exists
             if (existingIDArray.includes(IDvar) {
                 newID()
-            }) else {
-                return IDvar;
-            };
+            });
+            return IDvar;
         };
     };
 
