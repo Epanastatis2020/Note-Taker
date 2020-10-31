@@ -46,7 +46,7 @@ module.exports = function (app) {
     //------------------------------------------------
     app.get("/api/notes", function (req, res) {
         // setting db contents to a variable
-        let storedData = fs.readFileSync(__dirname + "/.../db/db.json");
+        let storedData = fs.readFileSync(__dirname + "/../db/db.json");
         // storing db content variable as JSON array
         notesArray = JSON.parse(storedData);
         // sending the array
