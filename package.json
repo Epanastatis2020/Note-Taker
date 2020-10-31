@@ -1,13 +1,22 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "An application for taking, storing and retrieving notes",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Epanastatis2020/Note-Taker.git"
+  },
+  "author": "Con Angelakis",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Epanastatis2020/Note-Taker/issues"
+  },
+  "homepage": "https://github.com/Epanastatis2020/Note-Taker#readme",
   "dependencies": {
     "express": "^4.16.4"
   }
