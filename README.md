@@ -21,7 +21,9 @@ This application uses an express backend and saves and retrieves note data from 
 ## User Story
 
 AS A user, I want to be able to write and save notes
+
 I WANT to be able to delete notes I've written before
+
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Installation
@@ -40,7 +42,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Usage
 
-Run `npm start` and using your web browser to access http://localhost:3000.
+Run `npm start` and using your web browser to access http://localhost:4000.
 
 Please visit the deployed app [here](https://ca-note-taker.herokuapp.com/index.html)
 
