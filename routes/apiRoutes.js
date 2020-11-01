@@ -24,6 +24,8 @@ const fs = require("fs");
             };
             return IDvar;
         };
+        
+        return newID();
     };
 
     // Write to the database
